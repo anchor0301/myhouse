@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>회원가입</title>
+	<meta carset="UTF-8">
+	<style>
+		.table{
+			width:300px;
+			background-color:gray;
+		}
+		.table #횟수{
+			width:30;
+		}
+		.tel input{
+			width:35px;
+			background-color:yellow;
+		}
+		.textarea{
+			width:286px;
+			height:150px;
+			font-size: 20px;
+			font-family: Consolas, sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<p>회원가입 </p><hr>
+	<form action="sing_up.html" name="dog" method="get" accept-charset="utf-8" >
+		<div class="table">
+			
+				<table>
+				<tr>
+					<th> <label for="id"> 견종 </label> </th>
+					<td><input type="text" id="id" name="id"  placeholder="견종" required></td> 
+				</tr> <!--견종-->
+
+				<tr>
+					<th><label for="sex"> 성별 </label> </th>
+					<td><input type="radio" id="sex" name="sex" value="수컷"> 수컷<input type="radio" name="sex" value="암컷">암컷</td>
+				</tr> <!--성별-->
+				<tr>
+					<th>접종 여부</th>
+					<td><input type="radio" name="
+	inoculation" value="yes"> Yes
+						<input type="radio" name="
+	inoculation" value="no">No</td>
+				</tr>  <!--접종 여부-->
+				<tr>
+					<th>입실 시간</th>
+					<td><input type="time" name="time"></td>
+				</tr>   <!--입실 시간-->
+
+				<tr>
+					<th>횟수</th>
+					<td><input type="number" id="횟수"min="1" max="10" value="1">번 </td>
+				 </tr> <!-- 횟수 -->
+
+				<tr>
+					<th>아침 픽업</th>
+					<td><input type="time" name="moning_time" value="07:00">	</td>
+				</tr> <!-- 아침 픽업-->
+
+				<tr>
+					<th>저녁 픽업</th>
+					<td><input type="time" name="moning_time" value="20:00">	</td>
+				</tr> <!-- 저녁 픽업-->
+			</table>
+				<br>
+				<input type="submit" value="등록"><br><br>
+
+		</div><hr>
+		<table>
+			<tr>
+				<th> <label for="owner"> 견주 성함</label></th>
+				<td><input type="text" id="owner" name="owner" placeholder="견주 성함" style="width:70px" > 님</td>
+			</tr>
+			
+			<tr>
+				<th>휴대폰</th>
+					<td>
+					<div class="tel">
+						<input type=tel name="tel" value="010" > -
+						<input type=tel name="tel"> -
+						<input type=tel name="tel">
+					</div>
+					</td>
+			</tr> 
+			<tr>
+				<th><label for="order">기타</label></th>
+				<td><input type="textarea" class="textarea" placeholder="기타특이사항" id=order name="order"></td>
+			</tr>
+			<td><input type="submit" value="등록"></td>
+		</table>
+		
+	</form>
+</body>
+</html>
