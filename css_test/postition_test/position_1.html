@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<style>
+			html{border :1px solid gray;}
+			div{border:5px solid tomato;
+				margin:10px;
+			}
+			#me{
+				position:relative; 
+				/* static은 오프셋을 무시하고 자기가 위치할곳에 있는다.
+				relative은 오프셋을 설정하면 그 값만큼 위치를 이동한다.*/
+				top:100px;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="other"> other</div>
+		<div id="parent">
+			parent
+			<div id="me">me</div>	
+		</div>
+	</body>
+</html>

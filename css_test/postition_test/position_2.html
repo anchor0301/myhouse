@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<style>
+			#parent,#other{
+				border:5px solid tomato;
+			}
+			#parent{
+				position:relative;
+			}
+			#me{
+				background-color :black;
+				color:white;
+				position:absolute;
+				/* absolute을 설정하고 값을 설정하면
+				html 맨 끝을 기준으로 한다.
+				하지만 값을 설정안하면 부모 테크를 기준으로한다.
+				하지만 부모테그의 소속은 아니다 */
+				
+			}
+		</style>
+	</head>
+	<body>
+	<div id="other"> other</div>
+		<div id="parent">
+			parent
+			<div id="me">me</div>	
+		</div>
+	</body>
+</html>
