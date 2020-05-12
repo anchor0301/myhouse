@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<style>
+		.container{
+			background-color:powderblue;
+			height:100px;
+			display:flex;
+		}
+		.item{
+			width:50px;
+			background-color:tomato; /*뒷배경 : 흰색 */
+			color:white; /* 흰색 */
+			border:1px solid white; /* 테두리 */
+			
+			
+		}
+		.item:nth-child(2){
+			flex-basis:300px;
+			/* flex-shrink:1; */
+		}
+		
+		</style>	
+	</head>
+	<body>
+		<div class="container">
+			<div class="item">1</div>
+			<div class="item">2</div>
+			<div class="item">3</div>
+			<div class="item">4</div>
+			<div class="item">5</div>
+		</div>
+	</body>
+</html>
