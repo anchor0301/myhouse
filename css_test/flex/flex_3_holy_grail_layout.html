@@ -1,0 +1,59 @@
+<html>
+	<head>
+	<style>
+		.container{
+			display:flex;
+			flex-direction :column;	
+		}
+		header{
+			border-bottom:1px solid black;
+			text-align:center;
+		}
+		footer{
+			border-top:1px solid black;
+			text-align:center;
+			padding:20px;
+		}
+		.content{
+			display:flex;	
+		}
+		.content nav{
+			border-right:1px solid black;
+		}
+		.content ad{
+			border-left:1px solid black;
+		}
+		nav, ad{
+			flex-basis:150px;
+		}
+		main{
+			padding:15px;
+		}
+	</style>	
+	</head>
+	<body>
+		<div class="container">
+			<header>
+			<h1>
+				해양경찰
+			</h1> </header>
+			<section class="content">
+				<nav>
+					<ul>
+						<li>html</li>
+						<li>css</li>
+						<li>javascript</li>
+					</ul>
+				</nav>
+				
+				<main>생활코딩을 보면서 공부중이다.
+				</main>
+				<ad> 광고영역
+				</ad>
+			</section>
+			<footer>
+			<a href="www.naver.com"> 네이버</a>
+			</footer>
+		</div>
+	</body>
+</html>
